@@ -1,2 +1,8 @@
 # Backup files left by emacs text editor.
 *~
+
+# ignore generated files
+*.a
+*.o
+*.gcda
+*.gcno
