@@ -19,6 +19,9 @@ SUBDIRS += $(GOOGLEDIRS)
 # default target: compile everything, execute tests
 all: $(SUBDIRS)
 
+clean: TARGET=clean
+clean: all
+
 # Always enter subdirectories
 .PHONY: $(SUBDIRS)
 
@@ -32,4 +35,4 @@ export GOOGLEMOCKLIBDIR
 
 # descend into sub directories
 $(SUBDIRS):
-	$(MAKE) -C $@
+	$(MAKE) -C $@ $(TARGET)
