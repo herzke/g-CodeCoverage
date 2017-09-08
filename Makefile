@@ -1,4 +1,7 @@
 # Compile with code coverage instrumentation
+# The default target "all" compiles, tests, and converts coverage data to html.
+# To automatically display coverage in the browser, use target show-coverage.
+
 CXXFLAGS += -std=c++11 --coverage
 LDFLAGS += --coverage
 LDLIBS += -pthread
@@ -17,13 +20,14 @@ GOOGLEDIRS = $(GOOGLEMOCKLIBDIR)
 SUBDIRS += $(GOOGLEDIRS)
 
 # default target: compile everything, execute tests
-all: $(SUBDIRS)
+all: $(SUBDIRS) coverage
 
 clean: TARGET=clean
 clean: all
+	rm -rf coverage.info coverage
 
 # Always enter subdirectories
-.PHONY: $(SUBDIRS)
+.PHONY: $(SUBDIRS) coverage
 
 # The test executable in test needs the objects from src:
 test: src $(GOOGLEDIRS)
@@ -36,3 +40,12 @@ export GOOGLEMOCKLIBDIR
 # descend into sub directories
 $(SUBDIRS):
 	$(MAKE) -C $@ $(TARGET)
+
+coverage: coverage.info
+	genhtml coverage.info --prefix $$PWD --output-directory $@
+
+coverage.info: $(SUBDIRS)
+	lcov --capture --directory . --output-file coverage.info
+
+show-coverage: coverage
+	x-www-browser ./coverage/src/index.html

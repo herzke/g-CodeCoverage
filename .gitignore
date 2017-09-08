@@ -6,3 +6,5 @@
 *.o
 *.gcda
 *.gcno
+coverage.info
+coverage
