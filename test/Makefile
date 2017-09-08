@@ -9,5 +9,5 @@ execute_test: test
 TESTS = $(wildcard *_test.cpp)
 TESTOBJECTS = $(patsubst %.cpp, %.o, $(TESTS))
 
-test: $(TESTOBJECTS) ../$(GOOGLEMOCKLIBDIR)/gmock_main.a
-	$(CXX) $(LDFLAGS) $(LDLIBS) -o $@ $^
+test: $(TESTOBJECTS) ../$(GOOGLEMOCKLIBDIR)/gmock_main.a ../src/libundertest.a
+	$(CXX) -o $@ $^ $(LDFLAGS) $(LDLIBS)
