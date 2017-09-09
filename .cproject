@@ -29,7 +29,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/googletest-github}/googletest/&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/googletest-github}/googlemock/&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.dialect.std.1531146630" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1531146630" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.958873723" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.518991202" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
@@ -39,7 +39,7 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1263790679" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1449855824" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
-								<option id="gnu.cpp.link.option.pthread.1903151466" superClass="gnu.cpp.link.option.pthread" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.pthread.1903151466" name="Support for pthread (-pthread)" superClass="gnu.cpp.link.option.pthread" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1711778626" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -50,8 +50,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.544320698.1281894195" name="/" resourcePath="googletest-github">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1729374003" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1770810225" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1167188548"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.620840317" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2021526114"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.452802878" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.518991202"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.999532410" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1263790679"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.314208697" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1449855824"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1534246601" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug.380671283"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry excluding="test" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="googletest-github|test" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="test"/>
 					</sourceEntries>
 				</configuration>
@@ -99,8 +109,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.release.322693525.1880734890" name="/" resourcePath="googletest-github">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.1728512832" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.release" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.673975739" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.127366602"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.198939353" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2090567682"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.551351480" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.565175709"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.580334844" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release.1909289895"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.786331256" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.1120641218"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.release.1953158539" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.release.156313823"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry excluding="test" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="googletest-github|test" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="test"/>
 					</sourceEntries>
 				</configuration>
