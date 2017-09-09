@@ -4,7 +4,7 @@ Template project for setting up a C++ development project with unit tests
 and code coverage analysis.
 
 The project in this branch is a template for test driven development
-and code coverage analysis with eclipse CDT.
+and code coverage analysis with eclipse CDT (eclipse version: oxygen).
 
 It uses CDT's internal builder. Googletest (with googlemock) is included 
 as a git submodule. That subdirectory is excluded from being built by the
