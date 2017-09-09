@@ -36,6 +36,8 @@ export CXXFLAGS
 export LDFLAGS 
 export LDLIBS
 export GOOGLEMOCKLIBDIR
+export GOOGLEMOCKINCLUDEDIR
+export GOOGLETESTINCLUDEDIR
 
 # descend into sub directories
 $(SUBDIRS):

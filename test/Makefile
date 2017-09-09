@@ -8,6 +8,7 @@ execute_test: test
 
 TESTS = $(wildcard *_test.cpp)
 TESTOBJECTS = $(patsubst %.cpp, %.o, $(TESTS))
+CXXFLAGS += -I../$(GOOGLETESTINCLUDEDIR) -I../$(GOOGLEMOCKINCLUDEDIR)
 
 test: $(TESTOBJECTS) ../$(GOOGLEMOCKLIBDIR)/gmock_main.a ../src/libundertest.a
 	$(CXX) -o $@ $^ $(LDFLAGS) $(LDLIBS)
