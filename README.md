@@ -62,7 +62,7 @@ execute tests in test runner, and finally the coverage.  Even better,
 half of these settings are forgotten when the project is opened in a
 different "workspace" or on a different computer.  Some actions that I
 used more than once seemed to have no keyboard shortcuts.  Why do they
-still use -std=c++0x for C++11?  That feels pretty abandonned.  The
+still use -std=c++0x for C++11?  That feels pretty abandoned.  The
 directory choices for git interaction are quite surprising.
 
 On top of that, ecliipse crashed every single time that I exited it.
